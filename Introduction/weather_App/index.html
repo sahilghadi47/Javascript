@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>| Weather App |</title>
+</head>
+
+<body class="md:flex justify-center items-start  h-screen bg-center bg-cover " style="background-image: url(./images/bg_main.jpg)">
+    <section class=" m-5 p-5   mt-10 border-2 border-gray-500 rounded-xl shadow-md bg-transparent  ">
+        <div id="searchBox" class="md:text-lg  font-semibold m-2  p-5   flex justify-center md:w-[600px] wd-[150px] ">
+            <input id="location_input" type="text" placeholder="Eg. Mumbai..."
+                class="border-2 border-gray-500 focus:border-blue-600 placeholder:text-gray-400 outline-none m-2 p-2 w-4/5 rounded-lg  ">
+            <button id="searchbtn" class="md:mx-10  "><img
+                    class="p2 w-5 h-5" src="./images/search.png" alt=""></button>
+        </div>
+        <div id="weatherInfo" class="text-center  m-2 p-5 hidden">
+            <h1 id="cityName" class=" p-2 md:text-4xl text-2xl font-semibold"></h1>
+            <p id="temp" class="text-lg font-semibold text-gray-700  p-2 "></p>
+            <p id="humidity" class="text-lg font-semibold text-gray-700  p-2 "></p>
+            <p id="windSpeed" class="text-lg font-semibold text-gray-700  p-2  "></p>
+
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
