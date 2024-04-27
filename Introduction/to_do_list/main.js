@@ -42,7 +42,3 @@ myList.addEventListener('click', (ev) => {
         ev.target.classList.toggle('done');
     }
 }, false)
-
-
-console.log(myList);
-console.log('Running');
