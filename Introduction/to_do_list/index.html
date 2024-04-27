@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    
+    <script defer src="https://kit.fontawesome.com/cec33afb59.js" crossorigin="anonymous"></script>
     <script defer src="./main.js"></script>
+
     <title>TO-DO LIST APP</title>
 </head>
-<body>
-    
+<body class="font-['Platypi']  h-screen flex bg-gradient-to-tr from-blue-700 to-pink-600  justify-center m-10 p-5 " >
+    <main class="w-[786px] bg-white  p-5 rounded-xl h-fit border border-gray-400 ">
+        <div id="searchbar" class="flex justify-between items-center">
+            <input type="text" id="title" placeholder="Title..." class=" bg-inherit backdrop-blur-sm w-[500px] m-3 px-5 py-2 outline-none border-2 rounded-lg focus:border-blue-500 placeholder:text-gray-500 text-gray-900 " >
+            <button id="submit" class="rounded-lg px-5 py-2 hover:bg-orange-800 bg-orange-600 text-white shadow-lg shadow-gray-500 transition-colors ">Add Task</button>
+        </div>
+        <p id="msg" class="p-2 m-2 text-red-600 hidden"></p>
+        <ul id="myList" class="text-lg font-semibold mx-3">
+        </ul>
+    </main>
 </body>
 </html>
