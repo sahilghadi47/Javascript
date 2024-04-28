@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="https://kit.fontawesome.com/cec33afb59.js" crossorigin="anonymous" defer></script>
+
+    <script src="./main.js" defer></script>
+    
+    <title>Image Gallery</title>
+
+</head>
+<body class="h-screen font-['Platypi'] flex justify-center items-center bg-gradient-to-tr from-purple-700 to-pink-600">
+    <header class="md:w-[720px] border bg-white">
+        <h1 class= "text-center text-4xl font-bold m-3 p-2 text-transparent bg-gradient-to-tr from-purple-700 to-pink-600">Image Gallery</h1>
+ 
+
+            <div id="main" class="w-full  p-1 relative border-b">
+                <i class="fa-solid fa-xmark absolute top-5 right-5 text-2xl  border border-white  px-1.5 py-1 rounded-[50%] cursor-pointer z-10 text-white" onclick="deleteImg()"></i>
+                <img id="main_img" src="./images/turtle.jpg" alt="main img" class="  w-full">
+            </div>
+            
+            <div class="cards   p-1 mt-3 w-full flex">
+                <img src="./images/panda.jpg" alt="cards_img" class=" cursor-pointer sample_img  p-1 w-1/4   h-[200px]  " >
+                <img src="./images/wolf.jpg" alt="cards_img" class=" cursor-pointer sample_img  p-1 w-1/4   h-[200px]  " >
+                <img src="./images/turtle.jpg" alt="cards_img" class=" cursor-pointer sample_img  p-1 w-1/4   h-[200px]  " >
+                <img src="./images/butterfly.jpg" alt="cards_img" class=" cursor-pointer sample_img  p-1 w-1/4   h-[200px]  " >
+            </div>
+            
+        </header>
+</body>
+</html>
