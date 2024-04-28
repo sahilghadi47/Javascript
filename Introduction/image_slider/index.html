@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./main.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <script defer src="https://kit.fontawesome.com/cec33afb59.js" crossorigin="anonymous"></script>
+
+    <title>Image Slider</title>
+</head>
+<body class="font-[EBGaramond] bg-gradient-to-tr from-rose-600 to-sky-400 h-screen">
+    <h1 class="text-4xl font-semibold italic p-5 text-center">Image Slider</h1>
+    <main class="w-screen  flex justify-center ">
+        <div class="w-[800px] h-[500px] relative flex justify-center p-5">
+            <button  id="slideLeft" class=" z-10 absolute top-1/2 -left-10 px-2 py-1 text-xl border rounded-full -translate-y-1/2"><i class="fa-solid fa-arrow-left "></i></button>
+            <button  id="slideRight" class=" z-10 absolute top-1/2 -right-10 px-2 py-1 text-xl border rounded-full  -translate-y-1/2"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class=" w-4/5 relative flex   overflow-hidden m-3 rounded-3xl shadow-xl">
+                <img src="./images/img1.jpg" alt="" class="absolute  w-full h-full rounded-3xl object-cover " >
+                <img src="./images/img2.jpg" alt="" class="absolute  w-full h-full rounded-3xl object-cover " >
+                <img src="./images/img3.jpg" alt="" class="absolute  w-full h-full rounded-3xl object-cover " >
+                <img src="./images/img4.jpg" alt="" class="absolute  w-full h-full rounded-3xl object-cover " >
+                <img src="./images/img5.jpg" alt="" class="absolute  w-full h-full rounded-3xl object-cover " >
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
