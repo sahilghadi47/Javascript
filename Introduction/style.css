@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-h1{
-    text-transform: uppercase;
-    background: linear-gradient();
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
