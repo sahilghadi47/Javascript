@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <button
+      class="butn"
+      id="green"
+      style="
+        padding: 20px;
+        margin: 10px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 20px;
+      "
+    >
+      Green
+    </button>
+    <button
+      class="butn"
+      id="blue"
+      style="
+        padding: 20px;
+        margin: 10px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 20px;
+      "
+    >
+      Blue
+    </button>
+    <button
+      class="butn"
+      id="red"
+      style="
+        padding: 20px;
+        margin: 10px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 20px;
+      "
+    >
+      Red
+    </button>
+    <button
+      class="butn"
+      id="orange"
+      style="
+        padding: 20px;
+        margin: 10px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 20px;
+      "
+    >
+      Orange
+    </button>
+    <button
+      class="butn"
+      id="none"
+      style="
+        padding: 20px;
+        margin: 10px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 20px;
+      "
+    >
+      reset
+    </button>
+    <script>
+        const body = document.querySelector('body');
+        
+        const mybtn = document.querySelectorAll('.butn');
+
+        mybtn.forEach((btn) =>{
+            btn.addEventListener('click',() =>{
+                const bgcol = btn.getAttribute('id');
+                body.style.background = bgcol;
+
+            })
+        })
+
+    </script>
+  </body>
+</html>
