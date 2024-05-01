@@ -5,85 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-    <button
-      class="butn"
-      id="green"
-      style="
-        padding: 20px;
-        margin: 10px;
-        outline: none;
-        border: 1px solid black;
-        border-radius: 20px;
-      "
-    >
-      Green
-    </button>
-    <button
-      class="butn"
-      id="blue"
-      style="
-        padding: 20px;
-        margin: 10px;
-        outline: none;
-        border: 1px solid black;
-        border-radius: 20px;
-      "
-    >
-      Blue
-    </button>
-    <button
-      class="butn"
-      id="red"
-      style="
-        padding: 20px;
-        margin: 10px;
-        outline: none;
-        border: 1px solid black;
-        border-radius: 20px;
-      "
-    >
-      Red
-    </button>
-    <button
-      class="butn"
-      id="orange"
-      style="
-        padding: 20px;
-        margin: 10px;
-        outline: none;
-        border: 1px solid black;
-        border-radius: 20px;
-      "
-    >
-      Orange
-    </button>
-    <button
-      class="butn"
-      id="none"
-      style="
-        padding: 20px;
-        margin: 10px;
-        outline: none;
-        border: 1px solid black;
-        border-radius: 20px;
-      "
-    >
-      reset
-    </button>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    "
+  >
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-bottom: 20px;">Background color theme switcher</h1>
+    <div>
+      <span
+        class="butn"
+        id="green"
+        style="
+          padding: 20px;
+          margin: 10px;
+          outline: none;
+          border: 1px solid black;
+          border-radius: 20px;
+        "
+      >
+        Green
+      </span>
+      <span
+        class="butn"
+        id="blue"
+        style="
+          padding: 20px;
+          margin: 10px;
+          outline: none;
+          border: 1px solid black;
+          border-radius: 20px;
+        "
+      >
+        Blue
+      </span>
+      <span
+        class="butn"
+        id="red"
+        style="
+          padding: 20px;
+          margin: 10px;
+          outline: none;
+          border: 1px solid black;
+          border-radius: 20px;
+        "
+      >
+        Red
+      </span>
+      <span
+        class="butn"
+        id="orange"
+        style="
+          padding: 20px;
+          margin: 10px;
+          outline: none;
+          border: 1px solid black;
+          border-radius: 20px;
+        "
+      >
+        Orange
+      </span>
+      <span
+        class="butn"
+        id="initial"
+        style="
+          padding: 20px;
+          margin: 10px;
+          outline: none;
+          border: 1px solid black;
+          border-radius: 20px;
+        "
+      >
+        reset
+      </span>
+    </div>
     <script>
-        const body = document.querySelector('body');
-        
-        const mybtn = document.querySelectorAll('.butn');
+      const body = document.querySelector("body");
 
-        mybtn.forEach((btn) =>{
-            btn.addEventListener('click',() =>{
-                const bgcol = btn.getAttribute('id');
-                body.style.background = bgcol;
+      const mybtn = document.querySelectorAll(".butn");
 
-            })
-        })
-
+      mybtn.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            const bgCol = e.target.id;
+            body.style.backgroundColor = bgCol
+        });
+      });
     </script>
   </body>
 </html>
