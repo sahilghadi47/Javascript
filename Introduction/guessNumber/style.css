@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    width: 400px;
+    height: fit-content;
+    margin: auto 10px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+input#guessNum{
+    padding: 8px 20px;
+    margin: 8px 4px;
+    outline: none;
+    background: initial;
+    border:1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+input#guessNum:disabled{
+    color: (rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+    border:1px solid rgba(16, 16, 16, 0.3);
+
+}
+input#sub{
+    background: initial;
+    margin: 8px 4px;
+    padding: 8px 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#res{
+    margin:20px;
+    text-align: left;
+}
+.btn{
+    display: block;
+    background: initial;
+    margin: 8px auto;
+    padding: 8px 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
