@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body
+    style="margin: 0;"
+>
+
+    <main
+        style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        "
+    >
+        <div
+            style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+                width: 300px;
+                border: 1px solid;
+                border-radius: 16px;
+            "
+        >
+            <button
+                style="
+                    background: initial;
+                    padding: 12px 28px;
+                    margin:8px;
+                    border: 1px solid;
+                    border-radius:8px;
+                    font-size: large;
+                    cursor: pointer;
+                "
+                id="start"
+            >START</button>
+            <button
+                style="
+                    background:initial;
+                    padding: 12px 28px;
+                    margin:8px;
+                    border: 1px solid;
+                    border-radius:8px;
+                    font-size: large;
+                    cursor: pointer;
+                "
+                id="end"
+            >END</button>
+        </div>
+    </main>
+    
+
+    <script>
+        const body = document.querySelector('body')
+        const button = document.querySelectorAll('button');
+
+        const randomCol = () =>{
+            const hex  = '0123456789ABCDEF';
+            let col ='#';
+            for(let i =0;i< 6;i++){
+                col += hex[Math.floor(Math.random() * 16)]
+            }
+            return col;
+        
+        }
+
+        let interval = null;
+        let changeBg = () =>{
+            if(interval == null){
+                console.log(interval)
+                interval = setInterval(start,1000);
+            }
+            function start () {
+                body.style.background = randomCol();
+            }
+
+        }
+        
+        const stop = () =>{
+            clearInterval(interval)
+            interval = null;
+        } 
+
+        button.forEach( (btn) =>{
+            btn.addEventListener('click', () =>{
+                if(btn.id === 'start'){
+                    changeBg();
+                }else if(btn.id==='end'){
+                    clearInterval(interval)
+                }
+            })
+        })
+        
+        
+    </script>
+
+</body>
+</html>
