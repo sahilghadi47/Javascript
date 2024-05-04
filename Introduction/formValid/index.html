@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cec33afb59.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Form Validation</title>
 </head>
 <body>
     <main>
-        <form id="inputForm">
-            <input type="text"   id="uName" placeholder="Enter your name" minlength="5" maxlength="20" required>
-            <input type="email"  id="uEmail" placeholder="Enter your email" required>
-            <input type="text" id="uContact" placeholder="Enter your contact"  minlength="10" required>
-            <button type="submit">Submit</button>
-        </form>
-    </main>
-    <script src="./main.js"></script>
+        <div class="form-area">
+
+            <div class="img-area">
+                <h1>WELCOME</h1>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <form id="inputForm">
+                <label for="fName">Full Name</label>
+                <input type="text"     id="fName" placeholder="Enter your full name"  >
+                <span id="fname-msg"></span>
+                <label for="email">Enter your Email</label>
+                <input type="text"    id="uEmail" placeholder="Eg... abc@xyz.efg" >
+                <span id="email-msg"></span>
+                <label for="uContact">Enter Mobile No</label>
+                <input type="text"      id="uContact" placeholder="eg. 0123456789">
+                <span id="tel-msg"></span>
+                <label for="uPass">Enter password</label>
+                <input type="password" id="uPass" placeholder="Enter password" minlength="8">
+                <span id="pass-msg"></span>
+                <label for="cnfPass">Confirm password</label>
+                <input type="password" id="cnfPass" placeholder="Confirm password" minlength="8">
+                <span id="cnf-msg"></span>
+                
+                <div id="msg"></div>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+    <script defer src="./main.js"></script>
 </body>
 </html>

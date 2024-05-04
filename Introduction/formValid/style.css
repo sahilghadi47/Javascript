@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 
 
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,94 @@
     font-family: "Platypi", serif;
 }
 
+
 main{
-    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: whitesmoke;
+    background-image: linear-gradient(45deg, #595B63, #9C9DA3);
+}
+
+.form-area{
+    padding: 30px;
+        background-image:linear-gradient(325deg ,#1a68a8 ,#061942 ) ;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 10px 10px 50px rgba(19, 4, 9, 0.37);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+form{
+    padding: 20px;
+}
+.form-area .img-area{
+    display: flex;
+    flex-direction: column;
+}
+.form-area .img-area h1{
+    margin: 30px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.form-area .img-area i{
+    justify-self: center;
+    align-self: center;
+    border: 1px solid #20206e;
+    color:  #5a5ad6;
+    border-radius: 50%;
+    padding: 24px;
+    font-size:80px;
+}
+
+form input, button ,label{
+    background: #3a3e4e48;
+    display: block;
+    padding: 8px 20px;
+    margin: 16px;
+    outline: none;
+    border:1px solid transparent;
+    border-radius: 10px; 
+    font-weight: 600;
+    cursor: pointer;
+    color: inherit;
+}
+
+input::placeholder{
+    color: inherit;
+    opacity: 0.4;
+}
+input:focus{
+    border: 2px solid #000068;
+}
+
+form span{
+    font-weight: 900;
+    padding-left:16px;
+    display: none;
+}
+form button{
+    width: fit-content;
+    margin: 24px auto;
+    border: 1px solid;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px #252527;
+}
+
+form label{
+    background: none;
+    padding: 0;
+    border: none;
+    cursor: initial;
+}
+
+#msg{
+    font-weight: 600;
+    color: green;
 }
